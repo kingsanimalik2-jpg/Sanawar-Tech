@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b14">
+  <meta name="description" content="SANAWAR DOWNLOADER - fast downloads for media links you own or are authorized to download.">
+  <title>SANAWAR DOWNLOADER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="glow glow-one"></div><div class="glow glow-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">S</span><span>SANAWAR<span class="blue"> DOWNLOADER</span></span></a>
+    <nav><a href="#how">How it works</a><a href="#platforms">Platforms</a><a href="#faq">FAQ</a></nav>
+    <span class="status"><i></i> ONLINE</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span></span> YOUR MEDIA. ONE PLACE.</div>
+      <h1>Download media.<br><span class="gradient">Keep it simple.</span></h1>
+      <p class="subtitle">A clean, fast downloader for direct media links you own or have permission to save.</p>
+
+      <div class="download-card">
+        <div class="input-wrap"><span class="link-icon">↗</span><input id="urlInput" type="url" placeholder="Paste your video or audio URL here..." autocomplete="url"><button id="pasteBtn" class="paste-btn" type="button">PASTE</button></div>
+        <button id="downloadBtn" class="download-btn" type="button"><span>↓</span> DOWNLOAD</button>
+        <div class="secure-note"><span>♢</span> No account required <b>•</b> Direct media links only</div>
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+      </div>
+      <div class="quick-stats"><div><strong>01</strong><span>Paste a link</span></div><div class="stat-line"></div><div><strong>02</strong><span>Check the URL</span></div><div class="stat-line"></div><div><strong>03</strong><span>Save your media</span></div></div>
+    </section>
+
+    <section id="platforms" class="section">
+      <div class="section-heading"><div><div class="eyebrow">WIDE WEB, ONE TOOL</div><h2>Popular platforms</h2></div><p>Recognizes popular social links and explains the official download route.</p></div>
+      <div class="platform-grid">
+        <div class="platform"><span class="platform-icon tiktok">♪</span><b>TikTok</b><small>Link detection</small></div>
+        <div class="platform"><span class="platform-icon facebook">f</span><b>Facebook</b><small>Link detection</small></div>
+        <div class="platform"><span class="platform-icon youtube">▶</span><b>YouTube</b><small>Link detection</small></div>
+        <div class="platform"><span class="platform-icon instagram">◎</span><b>Instagram</b><small>Link detection</small></div>
+        <div class="platform"><span class="platform-icon xbrand">𝕏</span><b>X / Twitter</b><small>Link detection</small></div>
+        <div class="platform"><span class="platform-icon pinterest">P</span><b>Pinterest</b><small>Link detection</small></div>
+        <div class="platform"><span class="platform-icon reddit">●</span><b>Reddit</b><small>Link detection</small></div>
+        <div class="platform"><span class="platform-icon vimeo">v</span><b>Vimeo</b><small>Link detection</small></div>
+      </div>
+      <p class="platform-disclaimer">Social platform links are detected, but this starter does not scrape or bypass their restrictions. Availability depends on each platform's terms, creator permissions, and official APIs.</p>
+    </section>
+
+    <section id="how" class="section how-section">
+      <div class="eyebrow">THREE SIMPLE STEPS</div><h2>How it works</h2>
+      <div class="steps">
+        <article><span class="step-no">01</span><div class="step-icon">↗</div><h3>Copy your link</h3><p>Copy a direct video or audio file URL from a source you are allowed to use.</p></article>
+        <article><span class="step-no">02</span><div class="step-icon">⌕</div><h3>Paste & check</h3><p>We validate the link and check that it points to a supported media file.</p></article>
+        <article><span class="step-no">03</span><div class="step-icon">↓</div><h3>Download</h3><p>Save the media directly to your device. No account is needed.</p></article>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="eyebrow">GOOD TO KNOW</div><h2>Frequently asked questions</h2>
+      <details><summary>Can I download from TikTok, Instagram, Facebook or YouTube?</summary><p>This starter detects these links but does not extract media from their pages. Use each platform's official download/export feature or connect an authorized API integration that permits the requested use.</p></details>
+      <details><summary>Does it remove watermarks?</summary><p>No. It does not remove or bypass watermarks, DRM, privacy settings, login requirements, or other platform protections.</p></details>
+      <details><summary>Which links can I download?</summary><p>Public direct links to supported video or audio files, provided you own the content or have permission to download it.</p></details>
+      <details><summary>Is there a file-size limit?</summary><p>The default server limit is 150 MB. The owner can adjust it using the MAX_DOWNLOAD_MB environment setting.</p></details>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">S</span><span>SANAWAR<span class="blue"> DOWNLOADER</span></span></a><span>© <span id="year"></span> SANAWAR TECH. Built for responsible downloads.</span></footer>
+  <script src="/app.js" defer></script>
+</body>
+</html>
